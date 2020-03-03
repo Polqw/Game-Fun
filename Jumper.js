@@ -28,14 +28,14 @@ function jumper() {
     this.velocity * 0.92; //air resistance
     
     //IF character hits groubd, movement in y direction will have jumper from leaving ground
-    if (this.y > h) {
-      this.y = h;
+    if (this.y > h-25) {
+      this.y = h-25;
       this.velocity = 0;
     }
     
     //stops character from leaving ceiling of screen
-    if (this.y < 0) {
-      this.y = 0;
+    if (this.y < 25) {
+      this.y = 25;
       this.velocity = 0;
     }
   };
