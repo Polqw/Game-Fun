@@ -21,6 +21,9 @@ function barrier() {
     if (this.x1 < 0) {
       this.y1 = random(h);
     }
+    if (barrier.x1 < 0) {
+      barrier.x1 = w-10;
+    }
     //randh = (h - (h * random(h)));
     
   };
